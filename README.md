@@ -3,8 +3,16 @@
 This is simple gif search app using [giphy-react-native SDK](https://github.com/Giphy/giphy-react-native-sdk/blob/HEAD/docs/getting-started.md#requirements) (software development kit), and [React Native](https://reactnative.dev).
 
 ### Main screen
-
-<img src="screen_shots/main_screen.jpg" width="200" ><img src="screen_shots/main_screen_2.jpg" width="200" >
+<table>
+  <tr>
+    <th>Example 1</th>
+    <th>Example 2</th>   
+  </tr>
+  <tr>
+    <td><img src="screen_shots/main_screen.jpg" width="200" ></td>
+    <td><img src="screen_shots/main_screen_2.jpg" width="200" ></td>    
+  </tr>
+</table>
 
 ### Press 'Click Here to search GIF'
 

@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Text,
-  View,
-  Image,
-  Button,
-  StyleSheet,
-  SafeAreaView,
-} from 'react-native';
+import {Button, StyleSheet, SafeAreaView} from 'react-native';
 import {
   GiphyDialog,
   GiphySDK,
@@ -14,7 +7,7 @@ import {
   GiphyContent,
 } from '@giphy/react-native-sdk';
 
-const theKey = 'fNAw1xO1xJNEvaK0E7xXGJDj93vICGqQ';
+const theKey = '_enter_your_api_key_here_';
 // Configure API keys
 GiphySDK.configure({apiKey: theKey});
 
@@ -28,19 +21,17 @@ const App = () => {
       <GiphyGridView
         content={GiphyContent.trendingGifs()}
         cellPadding={3}
-        style={{height: 700}}
-        onMediaSelect={e => {
-          console.log(e.nativeEvent.media);
-        }}
+        style={styles.screenHeight}
+        // onMediaSelect={e => {
+        //   console.log(e.nativeEvent.media);
+        // }}
       />
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {flex: 1, justifyContent: 'center', alignItems: 'center'},
-  text: {color: 'red', fontSize: 30},
-  img: {width: 100, height: 100, borderRadius: 100 / 2},
+  screenHeight: {height: '100%'},
 });
 
 export default App;

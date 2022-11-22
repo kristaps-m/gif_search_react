@@ -1,6 +1,23 @@
 //import {StatusBar} from 'expo-status-bar';
-import {StyleSheet, Text, View, Button, StatusBar} from 'react-native';
+import {
+  StyleSheet,
+  SafeAreaView,
+  Text,
+  View,
+  Button,
+  StatusBar,
+} from 'react-native';
 import {StackActions} from '@react-navigation/native';
+import {
+  GiphyDialog,
+  GiphySDK,
+  GiphyGridView,
+  GiphyContent,
+} from '@giphy/react-native-sdk';
+
+const theKey = 'fNAw1xO1xJNEvaK0E7xXGJDj93vICGqQ';
+// Configure API keys
+GiphySDK.configure({apiKey: theKey});
 
 export default function SecondScreen({navigation, route}) {
   let language = route.params.language;
@@ -19,6 +36,20 @@ export default function SecondScreen({navigation, route}) {
         }}
       />
       <StatusBar style="auto" />
+      <SafeAreaView>
+        <Button
+          title="Click Here to search GIF"
+          onPress={() => GiphyDialog.show()}
+        />
+        <GiphyGridView
+          content={GiphyContent.trendingGifs()}
+          cellPadding={3}
+          style={styles.screenHeight}
+          // onMediaSelect={e => {
+          //   console.log(e.nativeEvent.media);
+          // }}
+        />
+      </SafeAreaView>
     </View>
   );
 }
@@ -30,4 +61,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  screenHeight: {height: '100%'},
 });

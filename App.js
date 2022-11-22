@@ -14,7 +14,7 @@ export default function App() {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{title: 'Welcome'}}
+          options={{title: 'Welcome to Giphy App'}}
         />
         <Stack.Screen name="Second" component={SecondScreen} />
         <Stack.Screen

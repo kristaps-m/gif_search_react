@@ -16,12 +16,12 @@ const HomeScreen = ({navigation}) => {
   return (
     <View>
       <Button
-        title="Navigate to second screen with French"
-        onPress={() => navigation.navigate('Second', {language: 'french'})}
+        title="Giphy Page!"
+        onPress={() => navigation.navigate('Second')}
       />
       <Button
-        title="Navigate to second screen with English"
-        onPress={() => navigation.navigate('Second', {language: 'english'})}
+        title="Navigate to 3? screen with English"
+        onPress={() => navigation.navigate('Third', {language: 'english'})}
       />
       <StatusBar style="auto" />
     </View>
@@ -31,5 +31,9 @@ const HomeScreen = ({navigation}) => {
 // const styles = StyleSheet.create({
 //   screenHeight: {height: '100%'},
 // });
+
+/**
+ * title="Navigate to second screen with French"
+ */
 
 export default HomeScreen;

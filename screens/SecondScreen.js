@@ -20,11 +20,13 @@ const theKey = 'fNAw1xO1xJNEvaK0E7xXGJDj93vICGqQ';
 GiphySDK.configure({apiKey: theKey});
 
 export default function SecondScreen({navigation, route}) {
-  let language = route.params.language;
-  let greeting = language === 'french' ? 'Bonjour' : 'Hello';
+  //let language = route.params.language;
+  //let greeting = language === 'french' ? 'Bonjour' : 'Hello';
+
+  // style={styles.container}
   return (
-    <View style={styles.container}>
-      <Text>{greeting}</Text>
+    <View>
+      {/* <Text>{greeting}</Text> */}
       <Button
         title="Go to Third Screen"
         onPress={() => navigation.push('Third')}

@@ -8,6 +8,7 @@ import {
   StatusBar,
 } from 'react-native';
 import {StackActions} from '@react-navigation/native';
+import CustomButton from '../src/CustomButton';
 import {
   GiphyDialog,
   GiphySDK,
@@ -27,12 +28,9 @@ export default function SecondScreen({navigation, route}) {
   return (
     <View>
       {/* <Text>{greeting}</Text> */}
-      <Button
-        title="Go to Third Screen"
-        onPress={() => navigation.push('Third')}
-      />
-      <Button
-        title="Go to Third Screen with Replace"
+      <CustomButton title="Home Page!" onPress={() => navigation.popToTop()} />
+      <CustomButton
+        title="About Page!"
         onPress={() => {
           navigation.dispatch(StackActions.replace('Third'));
         }}

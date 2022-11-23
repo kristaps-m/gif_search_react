@@ -1,13 +1,23 @@
 //import {StatusBar} from 'expo-status-bar';
 import {StyleSheet, Text, View, Button, StatusBar} from 'react-native';
+import CustomButton from '../src/CustomButton';
 
 export default function ThirdScreen({navigation}) {
   return (
     <View style={styles.container}>
-      <Text>Third</Text>
-      <Button title="Pop to root" onPress={() => navigation.popToTop()} />
-      <Button title="Pop" onPress={() => navigation.pop()} />
+      <Text>ABOUT PAGE</Text>
+      <CustomButton title="Home page!" onPress={() => navigation.popToTop()} />
+      <CustomButton
+        title="Giphy Page!"
+        onPress={() => navigation.navigate('Second')}
+      />
       <StatusBar style="auto" />
+      <View style={styles.textContainer}>
+        <Text style={styles.text}>
+          Hi my name is Kristaps and I made this awesome Aplication using React
+          native ...
+        </Text>
+      </View>
     </View>
   );
 }
@@ -15,8 +25,17 @@ export default function ThirdScreen({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: 'lightblue',
+    //alignItems: 'center',
+    //justifyContent: 'center',
+  },
+  textContainer: {
+    marginTop: 40,
+    padding: 20,
+    flex: 1,
+  },
+  text: {
+    fontWeight: 'bold',
+    fontSize: 20,
   },
 });

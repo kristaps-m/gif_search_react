@@ -1,5 +1,4 @@
-//import {StatusBar} from 'expo-status-bar';
-import {StyleSheet, Text, View, Button, StatusBar} from 'react-native';
+import {StyleSheet, Text, View, StatusBar} from 'react-native';
 import CustomButton from '../src/CustomButton';
 
 export default function ThirdScreen({navigation}) {
@@ -26,8 +25,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'lightblue',
-    //alignItems: 'center',
-    //justifyContent: 'center',
   },
   textContainer: {
     marginTop: 40,

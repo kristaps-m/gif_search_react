@@ -1,25 +1,6 @@
-//import {StatusBar} from 'expo-status-bar';
 import React from 'react';
-import {
-  Button,
-  StyleSheet,
-  SafeAreaView,
-  View,
-  StatusBar,
-  ImageBackground,
-} from 'react-native';
-import ButtonWithBackground from '../src/ButtonWithBackground';
+import {StyleSheet, View, StatusBar, ImageBackground} from 'react-native';
 import CustomButton from '../src/CustomButton';
-// import {
-//   GiphyDialog,
-//   GiphySDK,
-//   GiphyGridView,
-//   GiphyContent,
-// } from '@giphy/react-native-sdk';
-
-// const theKey = 'fNAw1xO1xJNEvaK0E7xXGJDj93vICGqQ';
-// // Configure API keys
-// GiphySDK.configure({apiKey: theKey});
 
 const HomeScreen = ({navigation}) => {
   return (
@@ -35,8 +16,6 @@ const HomeScreen = ({navigation}) => {
           title="About Page"
           onPress={() => navigation.navigate('Third')}
         />
-        {/* <ButtonWithBackground />
-      <CustomButton /> */}
         <StatusBar style="auto" />
       </View>
     </ImageBackground>
@@ -59,9 +38,5 @@ const styles = StyleSheet.create({
     height: '100%',
   },
 });
-
-/**
- * title="Navigate to second screen with French"
- */
 
 export default HomeScreen;

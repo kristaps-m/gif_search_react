@@ -51,3 +51,12 @@ Giphy, is an American online database and search engine that allows users to sea
     <td><img src="screen_shots/search_cat.jpg" width="200" ></td>    
   </tr>
 </table>
+
+### :exclamation: How to run project?
+- Clone repository using git or download zip file
+- In 'gif_search_react' folder open powershell or cmd
+- Type 'npm install'or 'npm i' to do that you will need [Node LTS version](https://nodejs.org/en/)
+- Then use your andriod device or emulator
+- Launch project using commands from [React Native page](https://reactnative.dev/docs/environment-setup)
+- Commands 'npx react-native start' and then 'npx react-native run-android'
+- If you are stuck try [stackoverflow](https://stackoverflow.com/questions/39589301/clone-and-run-react-native-projects-from-github)

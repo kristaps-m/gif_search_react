@@ -9,7 +9,7 @@ Tools used :wrench: :hammer::
 
 ## [:exclamation:GET YOUR API KEY! developers.giphy.com](https://developers.giphy.com)
 
-:exclamation::exclamation::exclamation: go to App.js <br/>
+:exclamation::exclamation::exclamation: go to screens/GiphyScreen.js <br/>
 :exclamation::exclamation::exclamation: add your api-key to 'theKey' variable
 
 ### What is React Native?

@@ -8,8 +8,8 @@ import {
   GiphyContent,
 } from '@giphy/react-native-sdk';
 
-const theKey = 'fNAw1xO1xJNEvaK0E7xXGJDj93vICGqQ';
-// Configure API keys
+const theKey = '_enter_your_giphy_api_key_here_';
+
 GiphySDK.configure({apiKey: theKey});
 
 export default function GiphyScreen({navigation, route}) {
